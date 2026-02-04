@@ -2,7 +2,8 @@
 
 >  Earlier, we completed a project based on an AWS Workshop. We have now extended that project by integrating additional AWS services. To view the previous project documentation,
 👉 [click here](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop).<br>
->I have created a deployment video and uploaded it on YouTube. You can use it as a reference.[click here]().
+
+>>I have created a deployment video and uploaded it on YouTube. You can use it as a reference.[click here]().
 
 >
 
@@ -86,7 +87,7 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 ## Architecture Overview
 
 <p align="center">
-  <img src="https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/img/3TierArch.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/img/3TierArch.png?raw=true" width="700" alt="Initialize Repository Screenshot">
 </p>
 
 
@@ -169,7 +170,7 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 ---
 
 ## Setup the Ec2-instance and create the IAM (WEB Tier)
-**REF:** [web-tier](https://github.com/harishnshetty/3-tier-aws-15-services/edit/main/application-code/web-tier)
+**REF:** [web-tier](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/tree/main/application-code/web-tier)
 
 **Only Setup the Packages:**  
 - Nginx  
@@ -178,7 +179,7 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 ---
 
 ## Setup the Ec2-instance and create the IAM (APP Tier)
-**REF:** [app-tier](https://github.com/harishnshetty/3-tier-aws-15-services/tree/main/application-code/app-tier)
+**REF:** [app-tier](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/tree/main/application-code/app-tier)
 
 **Only Setup the Packages:**  
 - install  
@@ -201,7 +202,7 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 ## Create the  S3 Buckets
 
 ```bash
-git clone https://github.com/harishnshetty/3-tier-aws-15-services.git
+https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services.git
 ```
 
 1. 3-tier-aws-project-8745 (upload your content)  
