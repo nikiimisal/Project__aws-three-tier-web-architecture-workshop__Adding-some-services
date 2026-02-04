@@ -3,7 +3,7 @@
 >  Earlier, we completed a project based on an AWS Workshop. We have now extended that project by integrating additional AWS services. To view the previous project documentation,
 👉 [click here](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop).<br>
 
->>I have created a deployment video and uploaded it on YouTube. You can use it as a reference.[click here]().
+>>I have created a deployment video and uploaded it on YouTube. You can use it as a reference.👉[click here]().
 
 >
 
