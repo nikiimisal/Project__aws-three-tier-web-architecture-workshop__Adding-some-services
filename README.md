@@ -1,13 +1,98 @@
 # AWS Three Tier Web Architecture Workshop
-## For more projects, check out  
-## [https://harishnshetty.github.io/projects.html](https://harishnshetty.github.io/projects.html)
-## [Video-Link](https://youtu.be/wPrktKBkBQk?si=uGN33u_EWJmtoY8m)
-## Architecture Overview
 
-[![img](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/img/3TierArch.png?raw=true)]
+>  Earlier, we completed a project based on an AWS Workshop. We have now extended that project by integrating additional AWS services. To view the previous project documentation,
+👉 [click here](https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop).<br>
+>I have created a deployment video and uploaded it on YouTube. You can use it as a reference.[click here]().
+
+>
+
+## 🔷 Project Overview
+
+This project demonstrates a production-ready AWS Three-Tier Web Architecture designed with <br>
+high availability, scalability, and security in mind.<br>
+The architecture follows best practices by separating the Web, Application, and Database layers,<br>
+and integrates 15+ AWS services to simulate a real-world enterprise deployment.<br>
+
+The entire infrastructure is deployed inside a custom VPC spanning multiple Availability Zones (ap-south-1a, 1b, 1c) to ensure fault tolerance and high availability.
+
+---
+
+##  🏗️ Architecture Layers
+
+---
+
+###   🌐 Web Tier
+
+- Internet-facing Application Load Balancer
+- Auto Scaling EC2 instances running Nginx
+- Serves static and frontend content
+- Protected using WAF, ACM (SSL), and CloudFront
+- Accessible via Route 53 DNS
+
+###  ⚙️ Application Tier
+
+- Internal Application Load Balancer
+- Auto Scaling EC2 instances running backend services (Node.js / PM2)
+- Communicates securely with the Database tier
+- Fetches secrets dynamically from AWS Secrets Manager 
+
+###   🗄️ Database Tier
+
+- Amazon RDS MySQL deployed in Multi-AZ
+- Fully isolated in private subnets
+- No direct internet access
+- Credentials securely stored in Secrets Manager
+
+---
+
+###  🔐 Security & Networking
+
+- Fully private architecture with public and private subnets
+- Security Groups with tier-wise access control
+- NAT Gateways for outbound internet access from private subnets
+- IAM Roles for EC2 to access S3, Secrets Manager, and SSM securely
+- VPC Flow Logs enabled and stored in S3
+
+---
+
+###   📈 Monitoring & Logging
+
+- CloudWatch for metrics, alarms, and logs
+- SNS notifications for Auto Scaling and CloudWatch alarms
+- CloudTrail enabled for account activity auditing
+
+---
+
+###   ☁️ Additional AWS Services Used
+
+- S3 for application code, data storage, and VPC flow logs
+- CloudFront for global content delivery
+- ACM for SSL/TLS certificates
+- WAF for application layer protection
+- Route 53 for DNS management
+
+---
+
+###   🎯 Key Highlights
+
+- Highly available and scalable architecture
+- Secure secret management using AWS Secrets Manager
+- Infrastructure aligned with real-world DevOps & Cloud best practices
+- Ideal for learning, interviews, workshops, and production reference
 
 
 ---
+
+## Architecture Overview
+
+<p align="center">
+  <img src="https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/img/3TierArch.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
+---
+###   The following AWS services are required and will be used in this project.
+
 ```
 1. VPC (12 Subnets, 10 Route Tables, 1 IGW, 3 NAT)
 2. Security Group (Cross-connection)
