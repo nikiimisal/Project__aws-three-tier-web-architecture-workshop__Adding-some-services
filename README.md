@@ -199,10 +199,10 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 
 ---
 
-## Create the  S3 Buckets
+## Create the  S3 Buckets (automatically created when you created cloud trail )
 
 ```bash
-https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services.git
+git clone https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services.git
 ```
 
 1. 3-tier-aws-project-8745 (upload your content)  
