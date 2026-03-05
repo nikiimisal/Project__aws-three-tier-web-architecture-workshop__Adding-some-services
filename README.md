@@ -87,7 +87,7 @@ The entire infrastructure is deployed inside a custom VPC spanning multiple Avai
 ## Architecture Overview
 
 <p align="center">
-  <img src="https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/img/3TierArch.png?raw=true" width="700" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Project__aws-three-tier-web-architecture-workshop__Adding-some-services/blob/main/application-code/web-tier/src/assets/3TierArch.png?raw=true" width="700" alt="Initialize Repository Screenshot">
 </p>
 
 
